@@ -36,3 +36,4 @@ mvn clean install -DskipTests
 sudo dpkg -i application/target/thingsboard.deb
 
 https://github.com/thingsboard/thingsboard/issues/1952
+https://github.com/thingsboard/thingsboard/issues/1923
