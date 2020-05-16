@@ -29,15 +29,12 @@ git clean -fdx
 SOLUTION INFORMATION 2:    MAS AJUSTADA 
 -----------------------
 
-0
-
 Try this web: https://www.aconvert.com/image/png-to-svg/ to convert your png to svg. And download svg file, and place it to folder in ui/src/svg of thingsboard.
 
 And then change the top of the file with this, i give attachment of picture to change it. Especially change the svg id.
 
 https://i.stack.imgur.com/EW0kf.png 
 https://i.stack.imgur.com/4O0AS.png
-
 
 LINKS
 =====
