@@ -24,32 +24,23 @@
         <artifactId>msa</artifactId>
     </parent>
     <groupId>org.thingsboard.msa</groupId>
-    <artifactId>web-ui</artifactId>
+    <artifactId>js-executor</artifactId>
     <packaging>pom</packaging>
 
-    <name>ThingsBoard Web UI Microservice</name>
+    <name>ThingsBoard JavaScript Executor Microservice</name>
     <url>https://thingsboard.io</url>
-    <description>Service for hosting ThingsBoard Web UI</description>
+    <description>Service executing JavaScript functions in sandboxed environment</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <main.dir>${basedir}/../..</main.dir>
-        <pkg.name>tb-web-ui</pkg.name>
-        <docker.name>tb-web-ui</docker.name>
+        <pkg.name>tb-js-executor</pkg.name>
+        <docker.name>tb-js-executor</docker.name>
         <pkg.unixLogFolder>/var/log/${pkg.name}</pkg.unixLogFolder>
         <pkg.installFolder>/usr/share/${pkg.name}</pkg.installFolder>
         <pkg.linux.dist>${project.build.directory}/package/linux</pkg.linux.dist>
     </properties>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.thingsboard</groupId>
-            <artifactId>ui</artifactId>
-            <version>${project.version}</version>
-            <type>jar</type>
-            <scope>provided</scope>
-        </dependency>
-    </dependencies>
 
     <build>
         <plugins>
@@ -87,23 +78,6 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-dependency-plugin</artifactId>
                 <executions>
-                    <execution>
-                        <id>extract-web-ui</id>
-                        <goals>
-                            <goal>unpack</goal>
-                        </goals>
-                        <configuration>
-                            <artifactItems>
-                                <artifactItem>
-                                    <groupId>org.thingsboard</groupId>
-                                    <artifactId>ui</artifactId>
-                                    <type>jar</type>
-                                    <overWrite>false</overWrite>
-                                    <outputDirectory>${project.build.directory}/web</outputDirectory>
-                                </artifactItem>
-                            </artifactItems>
-                        </configuration>
-                    </execution>
                 </executions>
             </plugin>
             <plugin>
