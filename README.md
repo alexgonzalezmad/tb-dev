@@ -10,6 +10,10 @@ sudo apt install npm
 git clone https://github.com/thingsboard/thingsboard.git
 cd thingsboard
 git checkout release-2.4. | OR FOR 2.5 git checkout release-2.5
+
+within thingsboard directory and outside:
+
+first, npm install -g
 sudo npm install -g pkg
 
 CLEAN ENV
