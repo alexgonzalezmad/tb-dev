@@ -15,6 +15,12 @@ mvn clean install -DskipTests
 
 BUILD LOGOTIPO
 ===============
+To replace Thingsboard logo, you will need to build Thingsboard from source code.
+The logo is defined in : thingsboard-src/ui/src/svg/logo_title_white.svg
+You will need to replace this logo with your logo, but still using the same file name. Pay attention to the size (width and length) of original logo file, make sure your own logo has the same size.
+My approach is to generate a PNG logo, with size similar to the original Thingsboard Logo. And then I use Inkscape(https://inkscape.org/) to convert the PNG file to SVG.
+IMPORTANT : You have to remove the XML Tag in the SVG file you have just generated using Inkscape. Use text editor [ vim or nano] to delete the first line of the SVG file.
+Now, you need to build or compile Thingsboard source code. Make sure the source code is clean. [ sudo git clean -fdx]. And build!
 
 
 SOLLUTION 1 INFORMATION:
