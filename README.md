@@ -11,6 +11,10 @@ git clone https://github.com/thingsboard/thingsboard.git
 cd thingsboard
 git checkout release-2.4. | OR FOR 2.5 git checkout release-2.5
 sudo npm install -g pkg
+
+CLEAN ENV
+
+git clean -fdx
 mvn clean install -DskipTests
 
 BUILD LOGOTIPO
