@@ -5,7 +5,7 @@ sudo apt-get update
 sudo apt install openjdk-8-jdk
 sudo apt-get install libpng-dev
 sudo apt-get install maven
-sudo apt install nodejs
+sudo apt install nodejs instalar la 11 ver link en este documento:  https://geekflare.com/nodejs11-installation-guide/. 
 sudo apt install npm
 git clone https://github.com/thingsboard/thingsboard.git
 cd thingsboard
@@ -56,7 +56,7 @@ LINKS
 https://github.com/thingsboard/thingsboard/issues/1952
 https://github.com/thingsboard/thingsboard/issues/1923
 https://github.com/thingsboard/thingsboard/issues/1923
-https://geekflare.com/nodejs11-installation-guide/.           install nodejs11
+https://geekflare.com/nodejs11-installation-guide/.           install nodejs11 punto importante
 npm config set registry https://registry.npmjs.org/
 
 MODIFICAR LOGOTIPO
