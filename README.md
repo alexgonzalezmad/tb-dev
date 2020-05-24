@@ -56,6 +56,7 @@ LINKS
 https://github.com/thingsboard/thingsboard/issues/1952
 https://github.com/thingsboard/thingsboard/issues/1923
 https://github.com/thingsboard/thingsboard/issues/1923
+https://geekflare.com/nodejs11-installation-guide/.           install nodejs11
 
 MODIFICAR LOGOTIPO
 ==================
