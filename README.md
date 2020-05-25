@@ -66,6 +66,8 @@ https://stackoverflow.com/questions/44382732/custom-logo-not-updating-on-thingsb
 
 NEW WAY UPDATE
 ==============
+https://github.com/thingsboard/thingsboard/issues/1952
+
 
 cd
 sudo rm -r .m2
